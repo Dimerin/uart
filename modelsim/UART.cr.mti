@@ -1,0 +1,55 @@
+C:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_shift_left_register
+-- Compiling architecture tb of tb_shift_left_register
+-- Loading entity shift_left_register
+
+} {} {}} C:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DFC
+-- Compiling architecture ff of DFC
+
+} {} {}} C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shift_left_register
+-- Compiling architecture behavior of shift_left_register
+
+} {} {}} C:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dff_n
+-- Compiling architecture rtl of dff_n
+
+} {} {}} C:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seven_input_xor
+-- Compiling architecture xor_arch of seven_input_xor
+
+} {} {}} C:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity uart_tb1
+-- Compiling architecture test1 of uart_tb1
+-- Loading package NUMERIC_STD
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity uart
+
+} {} {}}

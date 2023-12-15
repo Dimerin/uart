@@ -1,0 +1,435 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/gabri/Desktop/VHDL/06_DDFS
+Edfc
+Z0 w1702047370
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 703
+Z3 dC:/Users/gabri/Desktop/VHDL/07_UART/modelsim
+Z4 8C:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd
+Z5 FC:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd
+l0
+L4 1
+VAKmOhd=>LMi^:?dT>EHbF3
+!s100 _>W]heCj?^o?Pk8[_k;BG3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1702475001
+!i10b 1
+Z8 !s108 1702475001.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd|
+Z10 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/src/dfc.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aff
+R1
+R2
+DEx4 work 3 dfc 0 22 AKmOhd=>LMi^:?dT>EHbF3
+!i122 703
+l15
+L14 11
+VFj2K;E7^GIU7JlfflP5DF2
+!s100 YLH?aoS1zE[Pfo6^cVdMV3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_n
+Z13 w1702048202
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 700
+R3
+Z15 8C:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd
+Z16 FC:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd
+l0
+L5 1
+V=lLLdk[Z4XgnXmF<QdMGU2
+!s100 VQPb9MA>=:onUa6daHXJP2
+R6
+32
+R7
+!i10b 1
+Z17 !s108 1702475000.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd|
+Z19 !s107 C:/Users/gabri/Desktop/VHDL/03_DFFN/src/DFF_N.vhd|
+!i113 1
+R11
+R12
+Artl
+R14
+R1
+R2
+DEx4 work 5 dff_n 0 22 =lLLdk[Z4XgnXmF<QdMGU2
+!i122 700
+l23
+L19 17
+V06VVF=[KhZJCoF6gFZnOd1
+!s100 ASfTjcg^O0>YX@CV5>jJJ2
+R6
+32
+R7
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Eparallelleftshift
+Z20 w1701707046
+R1
+R2
+!i122 58
+R3
+Z21 8C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd
+Z22 FC:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd
+l0
+L3 1
+Vi]TgkB5iC1l;7bg]Z[ah:1
+!s100 ==8hYURHYolf5FfTfDK0]0
+R6
+32
+Z23 !s110 1701707325
+!i10b 1
+Z24 !s108 1701707325.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd|
+Z26 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftv2.vhd|
+!i113 1
+R11
+R12
+Aparallelarchitecture
+R1
+R2
+Z27 DEx4 work 17 parallelleftshift 0 22 i]TgkB5iC1l;7bg]Z[ah:1
+!i122 58
+l13
+L11 13
+V44R@`H_0f0a3c5eAdYkVf0
+!s100 6IcH29Ro8JM_A?n_=gc?13
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Eseven_input_xor
+Z28 w1701768183
+R1
+R2
+!i122 704
+R3
+Z29 8C:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd
+Z30 FC:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd
+l0
+L4 1
+VfX?b4lehf@V[E`zJic?a@3
+!s100 nzdXd8gkAV<BTe?c]9d:`0
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd|
+Z32 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/src/xor7to1.vhd|
+!i113 1
+R11
+R12
+Axor_arch
+R1
+R2
+DEx4 work 15 seven_input_xor 0 22 fX?b4lehf@V[E`zJic?a@3
+!i122 704
+l12
+L11 4
+Vlnm2GRNINXG1m^Q9lV1GI1
+!s100 XcQdbki@g=cAb13M79io;0
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Eshift
+Z33 w1701341863
+R1
+R2
+!i122 46
+R3
+Z34 8C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftreg.vhd
+Z35 FC:/Users/gabri/Desktop/VHDL/07_UART/src/shiftreg.vhd
+l0
+L4 1
+VRGE<ldMZ@b2ahG@VI[DX_0
+!s100 keVGU<NPzOJ21bc^obESk3
+R6
+32
+Z36 !s110 1701341871
+!i10b 1
+Z37 !s108 1701341871.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftreg.vhd|
+Z39 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/src/shiftreg.vhd|
+!i113 1
+R11
+R12
+Aarchi
+R1
+R2
+DEx4 work 5 shift 0 22 RGE<ldMZ@b2ahG@VI[DX_0
+!i122 46
+l11
+L9 15
+VZmD?PT<:8@ee05aORMU?;0
+!s100 D13R;313nOJlk3cN]T?E40
+R6
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Eshift_left_register
+Z40 w1702474543
+R1
+R2
+!i122 701
+R3
+R21
+R22
+l0
+L4 1
+VCz]VL`;HIOS<nI2B?3]Po0
+!s100 mAZbUi^hN[T^2m@8`fOQ?0
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+Z41 DEx4 work 19 shift_left_register 0 22 Cz]VL`;HIOS<nI2B?3]Po0
+!i122 701
+l23
+L18 38
+VHMYkmoYJ8@ELJm`h_<EI11
+!s100 WAZYWFVR1QQSg`9KoN3F<2
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Etb_parallelleftshift
+Z42 w1701707311
+R1
+R2
+!i122 59
+R3
+Z43 8C:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd
+Z44 FC:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd
+l0
+L4 1
+V;_?OWZcCL9N2[Lf6;Igk;0
+!s100 NEP0Bzgdf]F6zjI9TFJeD0
+R6
+32
+R23
+!i10b 1
+R24
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd|
+Z46 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/tb/shiftv2_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+R27
+R1
+R2
+DEx4 work 20 tb_parallelleftshift 0 22 ;_?OWZcCL9N2[Lf6;Igk;0
+!i122 59
+l13
+L7 37
+V0B;IEN]WWm0o6P9PEJUoZ1
+!s100 J5GAWR4aGl<bL7ZG6cAVB2
+R6
+32
+R23
+!i10b 1
+R24
+R45
+R46
+!i113 1
+R11
+R12
+Etb_shift_left_register
+Z47 w1701862488
+R1
+R2
+!i122 705
+R3
+R43
+R44
+l0
+L4 1
+VoEd>`mi>[HWl922@lnc8g3
+!s100 nE`]ID^3m:Fd44Ej`N[hd2
+R6
+32
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12
+Atb
+R41
+R1
+R2
+DEx4 work 22 tb_shift_left_register 0 22 oEd>`mi>[HWl922@lnc8g3
+!i122 705
+l16
+L7 40
+V;Y6N43`j:=PP@`E8E?Z`b0
+!s100 m3amo20NeJ@^CoAfFk[FO0
+R6
+32
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12
+Euart
+Z48 w1702474993
+Z49 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z50 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+R14
+R1
+R2
+!i122 702
+R3
+Z51 8C:/Users/gabri/Desktop/VHDL/07_UART/src/uart.vhd
+Z52 FC:/Users/gabri/Desktop/VHDL/07_UART/src/uart.vhd
+l0
+L6 1
+V_]`>^J@Qj30B=;F8YRIPZ2
+!s100 4dCc`oZ=je]_V4>h[KZCZ1
+R6
+32
+R7
+!i10b 1
+R8
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/src/uart.vhd|
+Z54 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/src/uart.vhd|
+!i113 1
+R11
+R12
+Artl
+R49
+R50
+R14
+R1
+R2
+Z55 DEx4 work 4 uart 0 22 _]`>^J@Qj30B=;F8YRIPZ2
+!i122 702
+l77
+L22 111
+V6bTLQ>PILh6]fLH]R4M?D2
+!s100 [i9=K^TU^Eb66b^?N63>W1
+R6
+32
+R7
+!i10b 1
+R8
+R53
+R54
+!i113 1
+R11
+R12
+Euart_tb1
+Z56 w1702472970
+R1
+R2
+!i122 706
+R3
+Z57 8C:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd
+Z58 FC:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd
+l0
+L4 1
+VJ@mEZ7o]YDTcOkncYO:=G1
+!s100 ]cf[^35dPT?BUSczfSOk;0
+R6
+32
+R7
+!i10b 1
+R8
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd|
+Z60 !s107 C:/Users/gabri/Desktop/VHDL/07_UART/tb/uart_tb1.vhd|
+!i113 1
+R11
+R12
+Atest1
+R49
+R50
+R14
+R55
+R1
+R2
+Z61 DEx4 work 8 uart_tb1 0 22 J@mEZ7o]YDTcOkncYO:=G1
+!i122 706
+l18
+Z62 L7 45
+Z63 VfMFENdm?ObZGhDcYe<RMY2
+Z64 !s100 =J[;VSMEMF7cdITACXOl=3
+R6
+32
+R7
+!i10b 1
+R8
+R59
+R60
+!i113 1
+R11
+R12
