@@ -6,7 +6,7 @@ end uart_tb3;
 
 architecture test3 of uart_tb3 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1085;
+    constant clk_per_bit : positive := 1086;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';

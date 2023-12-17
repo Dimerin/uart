@@ -6,7 +6,7 @@ end uart_tb2;
 
 architecture test2 of uart_tb2 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1085;
+    constant clk_per_bit : positive := 1086;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
