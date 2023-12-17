@@ -94,7 +94,7 @@ architecture rtl of uart is
         q => valid_s
     );
 
-    parallel_shifter: shift_left_register
+    parallel_shifter: shift_right_register
     generic map(
         Nbit => 12
     )
