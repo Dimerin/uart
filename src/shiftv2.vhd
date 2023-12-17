@@ -16,40 +16,66 @@ entity shift_left_register is
 end shift_left_register;
 
 architecture behavior of shift_left_register is
+    type state is (S0,S1,S2);
+    signal current_state : state;
     signal reg : std_logic_vector(Nbit-1 downto 0) := (others => '0');
-    signal clock_counter : integer range 0 to ClksPerBit-1 := 0;
-    signal idle : std_logic := '1';
-    signal count : integer range 0 to (ClksPerBit-1)*12 := 0;
+    signal clock_counter : integer range 0 to ClksPerBit-1 := 1;
+    --signal idle : std_logic := '1';
+    signal count : integer range 0 to 11 := 0;
 begin
-    
+   
     process(clk, reset)
 
     begin
         if reset = '1' then
+            current_state <= S0;
             reg <= (others => '0');
-            clock_counter <= 0;
-            --idle <= '1';
+            clock_counter <= 1084;
             count <= 0;
         elsif rising_edge(clk) then
-            if load = '1' and count = 0 then
+            --current_state <= next_state;
+           case current_state is
+            when S0 =>
+            if load = '1' then
+                current_state <= S1;
                 reg <= data_in;
-                idle <= '0';
-                clock_counter <= 0;
+                clock_counter <= 1083;
                 count <= 1;
-            elsif clock_counter = ClksPerBit-1 and count /= 0 then
-                reg <= reg(Nbit-2 downto 0) & '1';
-                clock_counter <= 0;
-                idle <= '0';
-                count <= count+1;
-            elsif count = 11 then
-                count <= 0;
-            elsif count /= 0 then 
-                clock_counter <= clock_counter+1;
-                idle <= '0';
-            else 
-                idle <= '1';
             end if;
+
+            when S1 => 
+                if clock_counter = 0 then
+                    current_state <= S2;
+                    clock_counter <= 1083;
+                else
+                    clock_counter <= clock_counter - 1;
+                end if;
+            when S2 =>
+                if count = 11 then
+                    current_state <= S0;
+                else 
+                    reg <= reg(Nbit-2 downto 0) & '1';
+                    clock_counter <= 1084;
+                    count <= count+1;
+                    current_state <= S1;
+                end if;
+            end case;
         end if;
     end process;
-    shift_out <=idle or reg(Nbit-1);
+
+    p_OUTPUT_LOGIC: process(current_state, reg)
+    begin
+        shift_out <= '1';
+        case current_state is
+            when S0 =>
+                shift_out <= '1';
+            when S1 =>
+                shift_out <= reg(Nbit-1);
+            when S2 =>
+                shift_out <= reg(Nbit-1);
+        end case; 
+    end process;    
+
+
 end behavior;
+
