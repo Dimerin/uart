@@ -5,7 +5,6 @@ library ieee;
 
 entity uart is 
   generic(
-    ClksPerBit : positive := 1086;
     Nbit : positive := 7;
     Mbit : positive := 12
 );
@@ -25,7 +24,6 @@ architecture rtl of uart is
     signal x_3 : std_logic_vector(Mbit-1 downto 0) := (others => '0');
     signal xor_out : std_logic := '0';
     signal valid_s : std_logic := '0';
-    signal count : integer range 0 to ClksPerBit-1*12 := 0;
     signal psl_out : std_logic;
 
     component dff_n is 

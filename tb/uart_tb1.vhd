@@ -6,7 +6,7 @@ end uart_tb1;
 
 architecture test1 of uart_tb1 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1085;
+    constant clk_per_bit : positive := 1086;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
