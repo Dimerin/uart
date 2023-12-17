@@ -32,21 +32,21 @@ architecture test1 of uart_tb1 is
             resetn_i <= '0';
             wait for clk_period*clk_per_bit;
         
-            -- Apply test vectors
+            -- Simulating two words sent respecting timing constraints. At the end it will be driven a reset.
             x_valid <= '1';
             x <= "1000000";
             wait for clk_period;
             x_valid <= '0';
-            wait for clk_period*clk_per_bit*6;
+            wait for clk_period*clk_per_bit*12;
             x_valid <= '1';
             x <= "1111111";
             wait for clk_period;
             x_valid <= '0';
             wait for clk_period*clk_per_bit*12;
+            resetn_i <= '1';
+            wait for clk_period;
             testing <= false;
-        
             -- Finish simulation
-    
         end process;
 end architecture;
     
