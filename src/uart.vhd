@@ -48,7 +48,7 @@ architecture rtl of uart is
         );
     end component;
    
-    component shift_left_register is
+    component shift_right_register is
 
     generic (
         Nbit: positive := 12
