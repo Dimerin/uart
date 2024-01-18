@@ -3,4 +3,4 @@ First version of UART Transmitter project based on VHDL description language.
 
 
 # uart2.0
-In the second branch is available the last version.
+In the second branch is available the lateat version.
