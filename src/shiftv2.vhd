@@ -33,30 +33,30 @@ begin
             current_state <= S0; -- The state machine is reset.
             reg <= (others => '0'); -- The register is reset.
             clock_counter <= 1084; -- The clock counter is reset.
-            count <= 0;        -- The count is reset.
+            count <= 0;        -- The counter is reset.
         elsif rising_edge(clk) then 
            case current_state is -- The state machine is implemented.
             when S0 =>  
-            if load = '1' then -- When the load is high, the data_in is loaded in the register.
-                current_state <= S1; -- The state machine goes to the next state.
-                reg <= data_in; -- The data_in is loaded in the register.
+            if load = '1' then -- When the load is high, the data_in is loaded into the register.
+                current_state <= S1; -- The state machine goes into the next state.
+                reg <= data_in; -- The data_in is loaded into the register.
                 clock_counter <= 1083; -- The clock counter is reset, but with a value of 1083, because we're loading shift_out with the first bit of the parallel shift right register.
                 count <= 1; -- Count is set to 1, because we're loading shift_out with the first bit of the parallel shift right register.
             end if;
             when S1 => 
                 if clock_counter = 0 then -- We wait for the clock_counter to reach 0, we need to wait 1085 clock cycles to transmit a bit.
-                    current_state <= S2; -- The state machine goes to the next state.
+                    current_state <= S2; -- The state machine goes into the next state.
                     clock_counter <= 1083; -- The clock counter is reset, but with a value of 1083, because we're loading shift_out with the first bit of the parallel shift right register.
                 else
                     clock_counter <= clock_counter - 1; -- The clock counter is decremented, because we're waiting for the clock_counter to reach 0.
                 end if;
             when S2 =>
-                if count = 12 then -- When the count reaches 11, we have transmitted all the bits.
+                if count = 12 then -- When the count reaches 12, we have transmitted all the bits.
                     current_state <= S0; -- The state machine is reset.
                 else 
                     reg <= '1' & reg(Nbit-1 downto 1); -- The parallel shift right register is shifted right.
                     clock_counter <= 1084; -- The clock counter is reset, but with a value of 1084.
-                    count <= count+1; -- The count is incremented, because we have transmitted a bit.
+                    count <= count+1; -- The counter is incremented, because we have transmitted a bit.
                     current_state <= S1; -- The state machine goes to the next state.
                 end if;
             end case;
