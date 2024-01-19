@@ -48,7 +48,7 @@ architecture rtl of uart is
         );
     end component;
    
-    component shift_right_register is
+    component shift_left_register is
 
     generic (
         Nbit: positive := 12
@@ -94,7 +94,7 @@ architecture rtl of uart is
         q => valid_s
     );
 
-    parallel_shifter: shift_right_register
+    parallel_shifter: shift_left_register
     generic map(
         Nbit => 12
     )
