@@ -7,7 +7,7 @@ end uart_tb1;
 
 architecture test1 of uart_tb1 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1086;
+    constant clk_per_bit : positive := 1087;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
@@ -49,6 +49,13 @@ architecture test1 of uart_tb1 is
             --In this case it's going to wait another cycle in order to test if the circuit drives tx to '1' when the latter is idle.
             resetn_i <= '1';
             wait for clk_period;
+            resetn_i <= '0';
+            wait for clk_period;
+            x_valid <= '1';
+            x <= "0100010";
+            wait for clk_period;
+            x_valid <= '0';
+            wait for clk_period*clk_per_bit*12;
             -- End of simulation
             testing <= false;
             wait;            
