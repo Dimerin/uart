@@ -33,16 +33,16 @@ architecture test1 of uart_tb1 is
             wait for clk_period*clk_per_bit;
         
             -- Simulating two words sent respecting timing constraints. At the end it will be driven a reset.
-            x_valid <= '1';
-            x <= "1000000";
-            wait for clk_period;
+            x_valid <= '1'; -- Correctly driving both inputs in order to test the correct behaviour of the circuit.
+            x <= "1000000"; 
+            wait for clk_period; -- Driving correctly x_valid to start the transmission.
             x_valid <= '0';
-            wait for clk_period*clk_per_bit*12;
+            wait for clk_period*clk_per_bit*12; -- Here the circuit has just finished the transmission of the first word and it's going to start the transmission of the second one.
             x_valid <= '1';
             x <= "1111111";
             wait for clk_period;
             x_valid <= '0';
-            wait for clk_period*clk_per_bit*12;
+            wait for clk_period*clk_per_bit*13; --In this case it's going to wait another cycle in order to test if the circuit drives tx to '1' when the latter is idle.
             resetn_i <= '1';
             wait for clk_period;
             testing <= false;
