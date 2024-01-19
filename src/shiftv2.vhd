@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 entity shift_left_register is
     generic (
         Nbit: positive := 12;
-        ClksPerBit : positive := 1085 
+        ClksPerBit : positive := 1086 
         -- This is the number of clock cycles per bit transmitter with Baud Rate 115200. 
         --Essentially it can be adjusted if the Baud Rate is changed.
 
@@ -38,7 +38,7 @@ begin
              -- The state machine is reset.
             reg <= (others => '0'); 
             -- The register is reset.
-            clock_counter <= 1084; 
+            clock_counter <= ClksPerBit-1; 
             -- The clock counter is reset.
             count <= 0;        
             -- The counter is reset.
@@ -52,7 +52,7 @@ begin
                 -- The state machine goes into the next state.
                 reg <= data_in; 
                 -- The data_in is loaded into the register.
-                clock_counter <= 1083;
+                clock_counter <= ClksPerBit-2;
                  -- The clock counter is reset, but with a value of 1083, because we're loading shift_out with the first bit of the parallel shift left register.
                 count <= 1; 
                 -- Count is set to 1, because we're loading shift_out with the first bit of the parallel shift left register.
@@ -62,7 +62,7 @@ begin
                 -- We wait for the clock_counter to reach 0, we need to wait 1085 clock cycles to transmit a bit.
                     current_state <= S2; 
                     -- The state machine goes into the next state.
-                    clock_counter <= 1083; 
+                    clock_counter <= ClksPerBit-2; 
                     -- The clock counter is reset, but with a value of 1083, because we're loading shift_out with the first bit of the parallel shift left register.
                 else
                     clock_counter <= clock_counter - 1; 
@@ -76,7 +76,7 @@ begin
                 else 
                     reg <= reg(Nbit-2 downto 0) & '1'; 
                     -- The parallel shift left register is shifted left.
-                    clock_counter <= 1084; 
+                    clock_counter <= ClksPerBit-1; 
                     -- The clock counter is reset, but with a value of 1084.
                     count <= count+1; 
                     -- The counter is incremented, because we have transmitted a bit.
