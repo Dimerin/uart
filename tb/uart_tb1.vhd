@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+ 
 
 entity uart_tb1 is
 end uart_tb1;
@@ -45,8 +46,9 @@ architecture test1 of uart_tb1 is
             wait for clk_period*clk_per_bit*13; --In this case it's going to wait another cycle in order to test if the circuit drives tx to '1' when the latter is idle.
             resetn_i <= '1';
             wait for clk_period;
+            -- End of simulation
             testing <= false;
-            -- Finish simulation
+            wait;            
         end process;
 end architecture;
     

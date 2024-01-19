@@ -46,7 +46,8 @@ architecture test3 of uart_tb3 is
             x_valid <= '0';
             wait for clk_period*clk_per_bit*12;
             testing <= false;
-           -- Finish simulation
+           -- End of simulation
+           wait;
         end process;
 end architecture;
     
