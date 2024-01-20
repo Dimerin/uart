@@ -6,7 +6,7 @@ end uart_tb3;
 
 architecture test3 of uart_tb3 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1086;
+    constant clk_per_bit : positive := 1087;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
@@ -32,7 +32,10 @@ architecture test3 of uart_tb3 is
             resetn_i <= '0';
             wait for clk_period*clk_per_bit;
         
-            -- Simulating a scenario where the input x is changed while x_valid is not driven correctly. Then we start a new transmission with a new x and a correct x_valid.
+            -- Simulating a scenario where the input x 
+            --is changed while x_valid is not driven correctly.
+            -- Then we start a new transmission with a 
+            -- new x and a correct x_valid.
             x_valid <= '1';
             x <= "1000000";
             wait for clk_period;
@@ -47,7 +50,7 @@ architecture test3 of uart_tb3 is
             wait for clk_period*clk_per_bit*12;
             testing <= false;
            -- End of simulation
-           wait;
+            wait;
         end process;
 end architecture;
     

@@ -6,7 +6,7 @@ end uart_tb2;
 
 architecture test2 of uart_tb2 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1086;
+    constant clk_per_bit : positive := 1087;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
@@ -32,8 +32,10 @@ architecture test2 of uart_tb2 is
             resetn_i <= '0';
             wait for clk_period*clk_per_bit;
         
-            -- Simulating scenario where while the UART is transmitting, the input is changed and wrongfully x_valid  is set to 1.
-            -- After the wrong driving, the inputs are changed again (in this case driven correctly), in order to check if the trasmitter is still working.
+            -- Simulating scenario where while the UART is transmitting,
+            -- the input is changed and wrongfully x_valid  is set to 1.
+            -- After the wrong driving, the inputs are changed again (in this case respecting the time constraint),
+            -- in order to check if the trasmitter is still working.
             x_valid <= '1';
             x <= "1000000";
             wait for clk_period;
