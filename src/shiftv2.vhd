@@ -76,7 +76,7 @@ begin
                 else 
                     reg <= reg(Nbit-2 downto 0) & '1'; 
                     -- The parallel shift left register is shifted left.
-                    clock_counter <= ClksPerBit-1; 
+                    --clock_counter <= ClksPerBit-1; 
                     -- The clock counter is reset, but with a value of 1084.
                     count <= count+1; 
                     -- The counter is incremented, because we have transmitted a bit.

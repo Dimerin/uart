@@ -7,7 +7,7 @@ end uart_tb1;
 
 architecture test1 of uart_tb1 is 
     constant clk_period : time := 8 ns;
-    constant clk_per_bit : positive := 1087;
+    constant clk_per_bit : positive := 1086;
     constant Nbit: positive := 7;
     signal clk_i: std_logic := '0';
     signal resetn_i: std_logic := '0';
@@ -29,9 +29,9 @@ architecture test1 of uart_tb1 is
         begin
             -- Apply reset
             resetn_i <= '1';
-            wait for clk_period*clk_per_bit;
+            wait for clk_period;
             resetn_i <= '0';
-            wait for clk_period*clk_per_bit;
+            wait for clk_period;
             -- Simulating two words sent respecting timing constraints. At the end it will be driven a reset.
             -- Correctly driving both inputs in order to test the correct behaviour of the circuit.
             x_valid <= '1'; 
