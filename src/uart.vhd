@@ -20,9 +20,9 @@ end entity;
 
 architecture rtl of uart is 
     -- x_1 is the output of the first flip flop and it is in input of the xorNto1
-    signal x_1 : std_logic_vector(Nbit-1 downto 0) := (others => '0');
+    signal x_1 : std_logic_vector(Nbit-1 downto 0);
     -- x_3 is the signal that is loaded in the parallel shifter
-    signal x_3 : std_logic_vector(Mbit-1 downto 0) := (others => '0');
+    signal x_3 : std_logic_vector(Mbit-1 downto 0);
     -- xor_out is the signal that is the output of the xorNto1
     signal xor_out : std_logic := '0';
     -- valid_s is the signal that is the output of the second flip flop which store the x_valid value
