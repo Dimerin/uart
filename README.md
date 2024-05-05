@@ -16,7 +16,7 @@ This repository contains the VHDL code for a Universal Asynchronous Receiver/Tra
 The VHDL files included in this repository are:
 
 1. `uart.vhd`: This is the main VHDL file that contains the UART transmitter logic.
-2. `uart.vhd`: This is the core of the UART functionalities.
+2. `shiftv2.vhd`: This is the core of the UART functionalities.
 
 
 ## Simulation
